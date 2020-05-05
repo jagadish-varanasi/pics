@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# This Project is used to display the images seared by user :roket:
+>Styling is done with sematic-ui
+[Semantic-ui](https://semantic-ui.com/)
+------
+>Made use of API
+
 ## Available Scripts
 
 In the project directory, you can run:
