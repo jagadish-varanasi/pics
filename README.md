@@ -4,8 +4,30 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 >Styling is done with sematic-ui
 [Semantic-ui](https://semantic-ui.com/)
 ------
->Made use of API
+>Made use of UnSplash API
+[Unsplash](https://unsplash.com/developers)
+Register-->Create Application-->Go to Documentation-->search for Search Photos
 
+AJAX client is used to make request over API.
+* axios--3rd party package
+* fetch--function built in modern browers(requires lot of code than axios)
+
+>U can install axious with npm
+`npm install --save axios`
+
+```
+onSearchSubmit(term){
+      //request to api
+      axios.get('https://api.unsplash.com/search/photos',{
+          params:{query:term},
+          headers:{
+              Authorization:'---- YOUR API ACCCESS KEY------'
+          }
+      });
+      
+  }
+  ```
+  
 ## Available Scripts
 
 In the project directory, you can run:
