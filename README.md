@@ -27,7 +27,39 @@ onSearchSubmit(term){
       
   }
   ```
-  
+
+  #### Using .then to fetch images 
+  ```  onSearchSubmit(term){
+      //request to api
+      axios.get('https://api.unsplash.com/search/photos',{
+          params:{query:term},
+          headers:{
+              Authorization:'---- YOUR API ACCCESS KEY------'
+          }
+      }).then(
+          (response)=>{
+              console.log(response.data.results);
+          }
+      )
+      
+  }
+  ```
+
+  ### Using async await Syntax
+  ```
+  async onSearchSubmit(term){
+      //request to api
+     const response=await axios.get('https://api.unsplash.com/search/photos',{
+          params:{query:term},
+          headers:{
+              Authorization:'---- YOUR API ACCCESS KEY------'
+          }
+      });
+      console.log(response.data.results);
+    ```  
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
