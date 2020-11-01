@@ -62,7 +62,7 @@ onSearchSubmit(term){
       console.log(response.data.results);
     ```  
 
-
+<br>
 
 ## Available Scripts
 
